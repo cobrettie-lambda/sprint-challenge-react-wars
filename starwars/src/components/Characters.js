@@ -7,3 +7,5 @@ const Characters = props => {
         </div>
     );
 };
+
+export default Characters;
