@@ -34,6 +34,8 @@ Thinking in React means breaking down your web app into "components". Figure out
 
 - [ ] Describe state.
 
+In React, state is an object that represents the parts of an app that can change. Each component can maintain its own state, which lives in an object called this.state. Simply put, if you want your app to have any interactivity at all, state will be involved.
+
 - [ ] Describe props.
 
 ## Project Set Up
