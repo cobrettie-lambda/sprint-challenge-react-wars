@@ -38,6 +38,8 @@ In React, state is an object that represents the parts of an app that can change
 
 - [ ] Describe props.
 
+In React, components accept arbitrary inputs called "props" and return React elements describing what should appear on screen. Props are Read-Only.
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
