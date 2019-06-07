@@ -26,7 +26,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a JavaScript library, used for building out user interfaces. It solves quite a few problems. It allows for the creation of complex user interfaces from smaller, isolated pieces of code, called components. Our training kit material has introduced us to the fact that ReactJS makes use of the virtual DOM. Before React, developers needed to manipulate the DOM directly, using many DOM nodes, which would lead to errors and confusion. React has become the premier way to build big, fast web applications with JavaScript.
+
 - [ ] What does it mean to _think_ in react?
+
+Thinking in React means breaking down your web app into "components". Figure out what is going to perform this, that, and everything else. Break these items down into components. Thinking in React is breaking down these components into subcomponents as well. One component, one responsibility. Also known as the single responsibility principle. If the component ends up growing, it should be decomposed into smaller subcomponents.
 
 - [ ] Describe state.
 
