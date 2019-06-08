@@ -6,15 +6,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      dogs: {}
     };
   }
 
   componentDidMount() {
-    this.getCharacters('https://dog.ceo/api/breeds/image/random');
+    this.getDogs('https://dog.ceo/api/breeds/image/random');
   }
 
-  getCharacters = URL => {
+  getDogs = URL => {
     // feel free to research what this code is doing.
     // At a high level we are calling an API to fetch some starwars data from the open web.
     // We then take that data and resolve it our state.
@@ -23,14 +23,10 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        console.log("getCharacters data", data);
-        this.setState({ starwarsChars: data.results });
+        console.log("getDogs data", data);
+        this.setState({ dogs: data.message });
+        console.log(this.state);
       })
-
-      // .then(data => {
-      //   console.log("getCharacters data", data);
-      //   this.setState({ starwarsChars: data.next });
-      // })
 
       .catch(err => {
         throw new Error(err);
@@ -40,8 +36,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
-        <StarWarsList starwarsChars={this.state.starwarsChars} />
+        <h1 className="Header">Dog App</h1>
+        <img src={this.state.dogs} alt="A beautiful dog"></img>
       </div>
     );
   }
