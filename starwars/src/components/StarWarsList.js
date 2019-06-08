@@ -7,7 +7,9 @@ const StarWarsList = props => {
         <ul className="list-container">
             {props.starwarsChars.map((char, i) => {
                 return (
-                    <Characters starwarsChars={props.starwarsChars} index={i} />
+                    <li>
+                        <Characters starwarsChars={props.starwarsChars} index={i} />
+                    </li>
                 );
             })}
         </ul>
