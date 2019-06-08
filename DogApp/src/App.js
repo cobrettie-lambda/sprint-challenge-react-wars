@@ -36,8 +36,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">Dog App</h1>
-        <img src={this.state.dogs} alt="A beautiful dog"></img>
+        <h1 className="Header">A Beauty, On Every Refresh</h1>
+        <div className="img-container"><img src={this.state.dogs} alt="A beautiful dog"></img></div>
       </div>
     );
   }

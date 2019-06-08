@@ -3,7 +3,19 @@
 }
 .Header {
   color: #443e3e;
-  text-shadow: .5px 3px 3px #fff;
+  text-shadow: .5px 1px 3px #443e3e;
   font-size: 5rem;
 }
-/* write your parent styles in here for your App.js */
+
+.img-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+img {
+  border: 10px solid rgb(80, 167, 255);
+  border-radius: .5rem;
+}
