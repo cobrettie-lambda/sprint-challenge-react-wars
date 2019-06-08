@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
+import './components/StarWars.css';
 import './components/StarWarsList';
 import StarWarsList from './components/StarWarsList';
 
@@ -25,8 +26,15 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
+        console.log("getCharacters data", data);
         this.setState({ starwarsChars: data.results });
       })
+
+      // .then(data => {
+      //   console.log("getCharacters data", data);
+      //   this.setState({ starwarsChars: data.next });
+      // })
+
       .catch(err => {
         throw new Error(err);
       });

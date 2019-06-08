@@ -1,0 +1,13 @@
+.character-list-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.character-font {
+    color: #ececec;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px #443e3e;
+    border-bottom: 2px solid #443e3e;
+    margin-bottom: 20px;
+}
