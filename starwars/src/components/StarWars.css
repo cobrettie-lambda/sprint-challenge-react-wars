@@ -5,17 +5,26 @@ li {
 .character-container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #443e3e;    
 }
 
 .character-font {
     color: #ececec;
     font-size: 2rem;
     text-shadow: 3px 3px 3px #443e3e;
-    border-bottom: 2px solid #443e3e;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.character-font2 {
+    color: #ececec;
+    font-size: 1.4rem;
+    text-shadow: 3px 3px 3px #443e3e;
     margin-bottom: 20px;
 }
 
 .list-container {
-    max-width: 800px;
+    max-width: 500px;
     margin: 0 auto;
 }
